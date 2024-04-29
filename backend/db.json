@@ -83,6 +83,13 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2019-04-06",
+      "description": "Apple Store",
+      "category": "Phone",
+      "amount": "-345.99",
+      "id": 13
     }
   ]
 }
