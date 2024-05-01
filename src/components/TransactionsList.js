@@ -7,7 +7,7 @@ function TransactionsList({ searchTerm }) {
 
   //fetch backend
   const fetchTransactions = () => {
-    fetch("http://localhost:8001/transactions")
+    fetch("https://bank-of-flatiron-code-challenge-6.onrender.com/transactions")
       .then((response) => response.json())
       .then((data) => setTransactions(data))
       .catch((error) =>
@@ -28,7 +28,7 @@ function TransactionsList({ searchTerm }) {
 
   // delete
   const deleteTransaction = (id) => {
-    fetch(`http://localhost:8001/transactions/${id}`, {
+    fetch(`https://bank-of-flatiron-code-challenge-6.onrender.com/transactions/${id}`, {
       method: "DELETE"
     })
     .then((response) => {
@@ -41,6 +41,7 @@ function TransactionsList({ searchTerm }) {
       console.error("Error deleting transaction:", error);
     });
   };
+  
 
   return (
     <table className="ui celled striped padded table">
